@@ -8,7 +8,11 @@ Two different models are implemented in this project:
 * DenseNet121 Model: A pre-trained DenseNet121 model fine-tuned for the eye disease classification task.
   
 **Custom CNN Model**
-The custom CNN model is built using the following architecture:
+* The custom CNN model is built using the following architecture:
+* Conv2D layers with increasing filters and kernel sizes of (3, 3)
+* MaxPooling2D layers for down-sampling
+* Flatten layer to convert the 2D matrix to a vector
+* Dense layers for classification, ending with a softmax activation function for multi-class classification
 
 **DenseNet121 Model**
 DenseNet121 is a popular and powerful CNN architecture that connects each layer to every other layer in a feed-forward fashion. The model is fine-tuned on the eye disease dataset to leverage the pre-trained weights on ImageNet and improve classification accuracy.
